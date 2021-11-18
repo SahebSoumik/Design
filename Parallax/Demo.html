@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome</title>
+	<style type="text/css">
+		body, html
+		{
+			height: 100%;
+			margin: 0;
+			color: #fff;
+		}
+		.bgimg-1, .bgimg-2, .bgimg-3
+		{
+			position: relative;
+			opacity: 0.6;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.bgimg-1
+		{
+			background-image: url('parallax.png');
+			min-height: 100%;
+		}
+		.bgimg-2
+		{
+			background-image: url('parallax2.jpg');
+			min-height: 400px;
+		}
+		.bgimg-3
+		{
+			background-image: url('parallax3.png');
+			min-height: 400px;
+		}
+		.caption
+		{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			color: #000;
+		}
+		.caption span.border
+		{
+			background-color: lightskyblue;
+			color: antiquewhite;
+			padding: 20px;
+			font-size: 25px;
+			letter-spacing: 10px;
+		}
+		h3
+		{
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			color: lightgray;	
+		}
+		@media only screen and (max-width: 1000px)
+		{
+			.bgimg-1, .bgimg-2, .bgimg-3
+			{
+				background-attachment: scroll;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+	<div class="caption">
+		<span class="border">Scroll Down</span>
+	</div>
+</div>
+
+<div style="color: #777777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify;">
+	<h3 style="text-align: center;">Welcome Parallax Effect</h3>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</div>
+
+<div class="bgimg-2">
+	<div class="caption">
+		<span class="border" style="background-color: transparent; font-size: 25px; color:#f7f7f7">Something</span>
+	</div>
+</div>
+
+<div style="position: relative;">
+	<div style="color:#ddd; background-color:lightcyan; text-align:center; padding:50px; text-align:justify;">
+		<p>Scroll Up and Down To See the Effects</p>
+	</div>
+</div>
+
+<div class="bgimg-3">
+	<div class="caption">
+		<span class="border" style="background-color:transparent; font-size:25px;color: #f7f7f7;">
+			Scroll UP
+		</span>
+	</div>
+</div>
+
+<div style="position:relative;">
+	<div style="color:#ddd; background-color:ivory;text-align: center;padding: 50px 80px; text-align:justify;" >
+		<p>
+			Scroll Up and Down To See the Effects
+		</p>
+	</div>
+</div>
+
+<div class="bgimg-1">
+	<div class="caption">
+		<span class="border"> Something</span>
+	</div>
+</div>
+
+</body>
+</html>
